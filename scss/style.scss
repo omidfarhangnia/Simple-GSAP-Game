@@ -1,0 +1,92 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    width: 100%;
+    height: 100vh;
+    background: #000000;
+    overflow: hidden;
+}
+
+.box{
+    width: 46px;
+    height: 46px;
+    border-radius: 50%;
+    border: 2px solid #ffffff;
+    transform: translateX(10%), translateY(50vh);
+}
+
+.prize__box{
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    background: green;
+    top: 0;
+    left: 0;
+}
+.wall{
+    width: 50px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: red;
+}
+
+.wall0{
+    height: 50vh;
+}
+
+.wall1{
+    height: 60vh;
+}
+
+.wall2{
+    height: 60vh;
+}
+
+.wall3{
+    height: 90vh;
+}
+
+.band{
+    width: 100%;
+    height: 20vh;
+    position: fixed;
+    left: 100%;
+}
+
+.band0{
+    top: 0;
+}
+.band1{
+    top: 20vh;
+}
+.band2{
+    top: 40vh;
+}
+.band3{
+    top: 60vh;
+}
+.band4{
+    top: 80vh;
+}
+
+.you__loose, .you__win{
+    position: fixed;
+    left: 110%;
+    top: calc(50% - 40px);
+    font-size: 70px;
+    font-family: Arial, Helvetica, sans-serif;
+    transform: skewX(21deg);
+    user-select: none;
+}
+
+.you__loose{
+    color: #000000;
+}
+
+.you__win{
+    color: #ffffff;
+}
